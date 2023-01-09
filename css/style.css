@@ -1,0 +1,317 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    border: none;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.5em 0;
+    padding: 0;
+}
+
+[hidden], .hide {
+    display: none;
+}
+
+.clearfix:after, .container:after {
+    clear: both;
+}
+
+.clearfix:after, .container:after, .container:before, .clearfix:before {
+    display: table;
+    content: " ";
+}
+.screen_block{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.main-block {
+    background: url("../images/main-slide-bg1.jpg") center top no-repeat;
+}
+.head-block{
+    background: url("../images/hand-star.svg") 92% bottom no-repeat;
+}
+.quotes-block{
+    background: #FDC200 url("/images/star-small.svg") center 130px no-repeat;
+}
+
+.container {
+    width: 1530px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+.header{
+    display: none;
+}
+.header.show {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    overflow: hidden;
+    display: block;
+    background: #001524;
+}
+.header_wrapper {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-block .header_wrapper .container{
+    text-align: left;
+}
+.header_wrapper ul {
+    display: block;
+    width: auto;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.header_wrapper ul li{
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+}
+.header_wrapper ul li a{
+    color: #fff;
+    padding: 0 15px;
+}
+.header_wrapper ul li a:hover{
+
+}
+.logo{
+    font-family: 'Yantramanav', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 39px;
+    color: #001524;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+.header .logo{
+    color: #fff;
+}
+.main-title h1{
+    font-family: 'Yantramanav', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 150px;
+    line-height: 122px;
+    text-align: center;
+    color: #001524;
+    margin: 0 auto;
+    position: relative;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.main-block .help-link{
+    position: absolute;
+    right: 27px;
+    bottom:40px;
+    outline: none;
+    text-decoration: none;
+}
+.section-wrapper {
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 80px 0 0;
+    justify-content: center;
+    position: relative;
+}
+.main-wrapper {
+    padding: 0 0 40px;
+    justify-content: space-between;
+}
+.btn-play{
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin: 10px auto 0;
+    text-align: center;
+    padding: 0;
+}
+.main-title-color{
+    display: block;
+    color: #fdc200;
+}
+.scroll-wrapper p{
+    font-family: 'Yantramanav', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0 0 25px;
+}
+.head-block .section-wrapper .main-title{
+    position: relative;
+    display: block;
+}
+.head-block .section-wrapper .main-title h1{
+    padding-top: 130px;
+}
+.head-block .section-wrapper:after{
+    content: " ";
+    position: absolute;
+    bottom: -80px;
+    left: 46%;
+    display: inline-block;
+    background: url("/images/star-1.svg") 0 0 no-repeat;
+    height: 218px;
+    width: 233px;
+}
+.head-block .section-wrapper .main-title:after{
+    content: " ";
+    position: absolute;
+    bottom: -135px;
+    left: 37%;
+    display: inline-block;
+    background: url("/images/star-2.svg") 0 0 no-repeat;
+    height: 259px;
+    width: 267px;
+}
+.head-block .section-wrapper .main-title:before{
+    content: " ";
+    position: absolute;
+    top: 10px;
+    left: 52%;
+    display: inline-block;
+    background: url("/images/star-3.svg") 0 0 no-repeat;
+    height: 326px;
+    width: 336px;
+}
+.quotes-wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+}
+.quotes-information{
+    flex: 0 0 400px;
+    position: relative;
+}
+.quotes-information:before{
+    content: " ";
+    position: absolute;
+    top: -25px;
+    right: -15px;
+    display: inline-block;
+    background: url("/images/quotes.svg") 0 0 no-repeat;
+    height: 122px;
+    width: 154px;
+}
+.quotes-img-wrapper{
+    padding-top: 70px;
+    margin-bottom: 20px;
+}
+.quotes-text{
+    flex: 0 1 55%;
+    text-align: left;
+}
+.man-title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    color: #001524;
+}
+.text-small{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #001524;
+}
+.quotes-text h3{
+    font-family: 'Yantramanav', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 50px;
+    color: #133D60;
+    margin: 0 0 40px;
+}
+.quotes-text p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    color: #001524;
+    margin-bottom: 30px;
+}
+.btn-watch{
+    background: #133D60 url("/images/play-btn.svg") 96% center no-repeat;
+    border-radius: 30px;
+    padding: 15px 55px 15px 23px;
+    background-size: 32px auto;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    font-size: 20px;
+}
+
